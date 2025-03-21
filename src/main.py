@@ -1,8 +1,11 @@
-from textnode import TextNode, Texttype
+from textnode import TextNode, TextType
+from htmlnode import HTMLNode, LeafNode, ParentNode
+
 print("hello world")
 
 def main():
-    node = TextNode("Hello", Texttype.LINKS, "http://www.69.com")
-    node.__repr__()
+    node = TextNode("Hello", TextType.LINK, "http://www.69.com")
+    print(node)
+
 
 main()
